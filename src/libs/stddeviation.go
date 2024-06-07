@@ -2,11 +2,9 @@ package libs
 
 import "math"
 
-func Stddeviation(numbers []int) int {
+func Stddeviation(numbers []int) float64 {
 
 	res := math.Sqrt(float64(Variance(numbers)))
 
-	s := Round(res)
-
-	return s
+	return res
 }

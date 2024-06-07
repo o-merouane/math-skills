@@ -1,7 +1,7 @@
 package libs
 
-func Average(num []int) int{
-	
+func Average(num []int) float64 {
+
 	var sum int
 
 	for i := 0; i < len(num); i++ {
@@ -10,7 +10,5 @@ func Average(num []int) int{
 	}
 	avg := float64(sum) / float64(len(num))
 
-	s := Round(avg)
-
-	return s
+	return avg
 }

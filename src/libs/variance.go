@@ -1,19 +1,14 @@
 package libs
 
-func Variance(num []int) int {
+func Variance(num []int) float64 {
 
-	var sum int
-
-	for i := 0; i < len(num); i++ {
-		x := num[i] - Average(num)
-		x *= x
-		sum += x
-
+	// Calculate the variance
+	var varianceSum float64
+	for _, value := range num {
+		varianceSum += (float64(value) - Average(num)) * (float64(value) - Average(num))
 	}
+	variance := varianceSum / float64(len(num))
 
-	res := float64(sum) / float64((len(num) - 1))
+	return variance
 
-	s := Round(res)
-
-	return s
 }
