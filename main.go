@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 	"mathskills/src/libs"
+	"os"
 )
 
 func main() {
 
-	numbers := libs.ReadFile("data.txt")
+	numbers := libs.ReadFile(os.Args[1])
 
 	var0 := libs.Round(libs.Average(numbers))
 	var1 := libs.Round(libs.Variance(numbers))
