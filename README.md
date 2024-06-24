@@ -41,4 +41,5 @@ $ go run main.go data.txt
 This project was a great opportunity to apply theoretical knowledge of statistics in a practical programming context. It provided hands-on experience with data manipulation, file handling, and algorithmic implementation of statistical formulas. Moving forward, I look forward to applying these skills in future projects and continuing to explore more advanced topics in statistics and software development.
 
 ---
-
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
